@@ -1,0 +1,6 @@
+# Speeciaal voor de Apache nerds, Ik gebruik toch NGINX
+<IfModule mod_rewrite.c>
+ RewriteEngine On
+ RewriteRule ^$ public/ [L]
+ RewriteRule (.*) public/$1 [L]
+</IfModule>
